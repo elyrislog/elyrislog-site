@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset básico para evitar inconsistências */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte padrão */
+body {
+  font-family: system-ui, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+}
