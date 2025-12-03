@@ -1,0 +1,23 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0A0A0F;
+  --ely-blue: #1A4CFF;
+  --ely-cyan: #19E6FF;
+  --ely-violet: #A68CFF;
+}
+
+html,body,#root{height:100%}
+
+body{
+  background: linear-gradient(180deg, #06060a 0%, #0a0a0f 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.iris-accent{background:linear-gradient(90deg,var(--ely-blue),var(--ely-cyan));}
+.backglass{background:rgba(255,255,255,0.03);backdrop-filter:blur(6px)}
