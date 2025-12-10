@@ -1,5 +1,5 @@
 {
-  "name": "elyrislog-premium",
+  "name": "elyrislog-site",
   "private": true,
   "scripts": {
     "dev": "next dev",
