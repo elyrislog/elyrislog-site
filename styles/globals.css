@@ -1,21 +1,52 @@
+:root{
+  --accent:#38bdf8;
+}
 
-:root{--accent:#38bdf8}
 body{
- background:radial-gradient(circle at top,#0b1220,#000);
- color:#fff;
- margin:0;
- font-family:system-ui,Arial;
+  background:radial-gradient(circle at top,#0b1220,#000);
+  color:#fff;
+  margin:0;
+  font-family:system-ui,Arial;
 }
-h1,h2{letter-spacing:-.02em}
-a{color:var(--accent)}
+
+h1,h2{
+  letter-spacing:-.02em;
+}
+
+a{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+/* CARD PADRÃO */
 .card{
- background:linear-gradient(180deg,#0e1625,#0b1220);
- border:1px solid #1f2937;
- border-radius:18px;
- padding:28px;
+  background:linear-gradient(180deg,#0e1625,#0b1220);
+  border:1px solid #1f2937;
+  border-radius:18px;
+  padding:28px;
 }
-.section{max-width:1100px;margin:auto;padding:72px 20px}
-@media(max-width:768px){
- .section{padding:48px 16px}
- h1{font-size:32px}
+
+/* CONTAINER DE SEÇÃO */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:72px 20px;
+}
+
+/* LOGO NO HERO – AQUI ESTÁ O QUE FALTAVA */
+.hero-logo{
+  display:block;
+  margin:40px auto 24px;
+  /* aumenta o tamanho do logo, pode ajustar os valores */
+  width:clamp(260px, 40vw, 480px);
+}
+
+/* RESPONSIVO */
+@media (max-width:768px){
+  .section{
+    padding:48px 16px;
+  }
+  h1{
+    font-size:32px;
+  }
 }
