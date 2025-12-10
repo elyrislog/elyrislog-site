@@ -50,3 +50,91 @@ a{
     font-size:32px;
   }
 }
+/* =========================
+   HERO BLOCO PRINCIPAL
+========================= */
+
+.hero-block {
+  max-width: 960px;
+  margin: 60px auto 120px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.05;
+  margin: 32px 0 20px;
+}
+
+.hero-subtitle {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.feature-list {
+  display: grid;
+  gap: 16px;
+  max-width: 720px;
+}
+
+.feature-list div {
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.section-soft {
+  background: radial-gradient(circle at top, #020617, #000);
+}
+
+/* GRID DE CARDS */
+
+.cards-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.final-cta {
+  text-align: center;
+  padding: 100px 20px;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.final-cta h2 {
+  margin-bottom: 24px;
+}
+
+.final-cta a {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid #1f2937;
+  text-decoration: none;
+}
