@@ -218,3 +218,70 @@ v/* FORMULÁRIO DE CONTATO */
     grid-template-columns: 1fr;
   }
 }
+
+/* CARD DO FORMULÁRIO */
+
+.contact-form-card {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(2, 6, 23, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  display: grid;
+  gap: 16px;
+}
+
+/* GRID NOME + EMAIL */
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* INPUTS */
+
+.contact-form-card input,
+.contact-form-card textarea {
+  background: #020617;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: #f9fafb;
+  font-family: inherit;
+}
+
+.contact-form-card textarea {
+  resize: none;
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+  color: #9ca3af;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* BOTÃO */
+
+.contact-form-card button {
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 24px;
+  }
+}
