@@ -2,9 +2,24 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 export default function Home(){
- return(<><Header/><main style={{padding:60,textAlign:'center'}}>
- <img src="/logo.png" style={{maxWidth:240}} />
- <h1>Tecnologia e inteligência aplicadas à logística</h1>
- <p>Integração de sistemas, rastreamento e gestão operacional.</p>
- </main><Footer/></>)
+ return(
+  <>
+   <Header/>
+   <section className="section" style={{textAlign:'center'}}>
+    <img src="/logo.png" style={{maxWidth:260,marginBottom:32}}/>
+    <h1>Tecnologia aplicada à logística</h1>
+    <p style={{opacity:.75,maxWidth:760,margin:'20px auto'}}>
+     Integração de dados, rastreamento em tempo real e inteligência operacional.
+    </p>
+   </section>
+   <section className="section">
+    <div style={{display:'grid',gap:24,gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))'}}>
+      <div className="card">Rastreamento e monitoramento contínuo</div>
+      <div className="card">Integração com ERPs e sistemas</div>
+      <div className="card">Dashboards estratégicos</div>
+    </div>
+   </section>
+   <Footer/>
+  </>
+ )
 }
