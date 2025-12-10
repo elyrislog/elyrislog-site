@@ -3,15 +3,25 @@
 }
 
 body{
-  background:radial-gradient(circle at top,#0b1220,#000);
-  color:#fff;
+  background: radial-gradient(circle at top, #020617, #000);
+  color:#f9fafb;
   margin:0;
-  font-family:system-ui,Arial;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-h1,h2{
-  letter-spacing:-.02em;
+
+h1{
+  font-weight:700;
 }
+
+h2{
+  font-weight:600;
+}
+
+p{
+  line-height:1.6;
+}
+
 
 a{
   color:var(--accent);
