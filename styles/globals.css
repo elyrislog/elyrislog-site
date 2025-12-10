@@ -170,3 +170,51 @@ a{
   transform: translateY(-1px);
   box-shadow: 0 10px 30px rgba(14,165,233,.25);
 }
+
+
+v/* FORMULÁRIO DE CONTATO */
+
+.contact-form {
+  max-width: 560px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #020617;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: #f9fafb;
+  font-family: inherit;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+.contact-form button {
+  margin-top: 16px;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
