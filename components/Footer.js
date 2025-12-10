@@ -1,1 +1,1 @@
-export default function Footer(){return <footer style={{padding:40,textAlign:'center',opacity:.6}}>© ElyrisLog</footer>}
+export default function Footer(){return <footer style={{padding:48,textAlign:'center',opacity:.6}}>© ElyrisLog</footer>}
