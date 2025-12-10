@@ -6,7 +6,7 @@ export default function Home(){
   <>
    <Header/>
    <section className="section" style={{textAlign:'center'}}>
-    <img src="/logo.png" style={{maxWidth:260,marginBottom:32}}/>
+    <img src="/logo.png" className="hero-logo" alt="ElyrisLog" />
     <h1>Tecnologia aplicada à logística</h1>
     <p style={{opacity:.75,maxWidth:760,margin:'20px auto'}}>
      Integração de dados, rastreamento em tempo real e inteligência operacional.
