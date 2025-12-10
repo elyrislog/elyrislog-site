@@ -9,20 +9,62 @@ export default function Contact() {
       <section className="hero-block">
         <h1 className="hero-title">Fale com um especialista</h1>
         <p className="hero-subtitle">
-          Conte um pouco sobre sua operação e vamos avaliar juntos como o
-          ElyrisLog WMS pode ajudar.
+          Conte um pouco sobre a sua operação e vamos avaliar como o ElyrisLog
+          WMS pode se adaptar ao seu cenário.
         </p>
       </section>
 
       <section className="section">
-        <p className="text-block">
-          Preencha os dados abaixo e nossa equipe entrará em contato para uma
-          conversa inicial. Se fizer sentido, seguimos com uma demonstração do
-          sistema aplicada ao seu contexto.
-        </p>
+        <form
+          action="https://formsubmit.co/contato@elyrislog.com.br"
+          method="POST"
+          className="contact-form"
+        >
+          {/* Proteção contra spam */}
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
 
-        <p className="text-block">
-          📧 contato@elyrislog.com.br
+          <div className="form-grid">
+            <input
+              type="text"
+              name="nome"
+              placeholder="Nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+
+          <input
+            type="text"
+            name="empresa"
+            placeholder="Empresa"
+          />
+
+          <input
+            type="text"
+            name="tipo_operacao"
+            placeholder="Tipo de operação (3PL, e-commerce, logística própria)"
+          />
+
+          <textarea
+            name="mensagem"
+            placeholder="Descreva brevemente sua operação"
+            rows="5"
+          />
+
+          <button type="submit" className="btn-primary">
+            Enviar mensagem
+          </button>
+        </form>
+
+        <p className="text-block" style={{ marginTop: "32px" }}>
+          Ou, se preferir, envie um e-mail para:<br />
+          <strong>contato@elyrislog.com.br</strong>
         </p>
       </section>
 
