@@ -25,6 +25,20 @@ export default function Footer() {
       >
         📞 Fale pelo WhatsApp: (11) 91857-9195
       </a>
+          {/* BOTÃO FLUTUANTE WHATSAPP */}
+<a
+  href="https://wa.me/5511918579195?text=Ol%C3%A1!%20Tenho%20interesse%20no%20ElyrisLog%20WMS."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="whatsapp-float"
+>
+  <img
+    src="/whatsapp-icon.png"
+    alt="WhatsApp"
+    style={{ width: "32px", height: "32px" }}
+  />
+</a>
+
     </footer>
   );
 }
