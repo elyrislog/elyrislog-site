@@ -67,8 +67,20 @@ export default function Contact() {
           <strong>contato@elyrislog.com.br</strong>
         </p>
       </section>
+<p className="text-block" style={{ marginTop: "20px", textAlign: "center" }}>
+  Ou fale diretamente pelo WhatsApp:<br />
+  <a
+    href="https://wa.me/5511918579195?text=Ol%C3%A1!%20Tenho%20interesse%20no%20ElyrisLog%20WMS."
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#38bdf8", fontWeight: "600" }}
+  >
+    📲 (11) 91857-9195 — Iniciar conversa no WhatsApp
+  </a>
+</p>
 
       <Footer />
     </>
   );
 }
+
