@@ -40,5 +40,21 @@ export default function Footer() {
 </a>
 
     </footer>
+
+
+  {/* BOTÃO FLUTUANTE WHATSAPP */}
+      <a
+        href="https://wa.me/5511918579195?text=Ol%C3%A1!%20Tenho%20interesse%20no%20ElyrisLog%20WMS."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-float"
+      >
+        <img
+          src="/whatsapp-icon.svg"
+          alt="WhatsApp"
+          style={{ width: "28px", height: "28px" }}
+        />
+      </a>
+    </>
   );
 }
