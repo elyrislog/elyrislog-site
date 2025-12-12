@@ -285,9 +285,6 @@ v/* FORMULÁRIO DE CONTATO */
     padding: 24px;
   }
 }
-
-/* BOTÃO FLUTUANTE WHATSAPP */
-
 .whatsapp-float {
   position: fixed;
   width: 56px;
@@ -295,17 +292,16 @@ v/* FORMULÁRIO DE CONTATO */
   bottom: 28px;
   right: 28px;
   background-color: #22c55e;
-  color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
   z-index: 999;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
+
